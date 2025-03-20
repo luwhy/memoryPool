@@ -12,6 +12,7 @@ namespace MemoryPool
     // ALIGNMENT等于void*指针的大小
     constexpr size_t FREE_LIST_SIZE = MAX_BYTES / ALIGNMENT;
 
+    constexpr size_t PAGE_SIZE = 4096;
     /**
      * @brief 内存块头部信息
      *
